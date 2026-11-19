@@ -25,7 +25,7 @@ Integrasi menggunakan sistem plugin dan provider CAPTCHA SLiMS. Tidak perlu meng
 1. Unduh ZIP plugin pada tautan di atas, lalu ekstrak folder `cloudflare-turnstile` ke direktori `plugins/` SLiMS.
 2. Aktifkan **Cloudflare Turnstile** melalui menu pengelola plugin SLiMS.
 3. Buat widget **Managed** di dashboard Cloudflare Turnstile dan daftarkan hostname situs.
-4. Buka **System → Cloudflare Turnstile**, lalu isi Site Key, Secret Key, dan hostname situs. Gunakan domain saja, misalnya `opac.example.org`, tanpa `https://`, port, atau path.
+4. Buka **System → Cloudflare Turnstile**, lalu isi Site Key, Secret Key, dan hostname situs. Gunakan domain saja, misalnya `opac.domainanda.ac.id`, tanpa `https://`, port, atau path.
 5. Pilih halaman yang dilindungi, centang **Aktif**, lalu klik **Simpan Pengaturan**.
 6. Uji login pustakawan dan anggota melalui browser privat sambil mempertahankan sesi admin yang masih aktif.
 
@@ -50,13 +50,9 @@ Jika mengunduh seluruh repository melalui **Code → Download ZIP**, gunakan sub
 
 ## Kontak dan laporan masalah
 
-**Agung PW**
-
 - Website: https://agungprasetyo.net/
 - GitHub: https://github.com/prazetyo
 - Bug dan masukan: https://github.com/prazetyo/slims-cloudflare-turnstile/issues
-
-Saat melaporkan masalah, sertakan versi SLiMS/PHP, versi plugin, dan pesan error. Jangan sertakan Secret Key, password, atau isi file kunci enkripsi.
 
 ## Lisensi
 
