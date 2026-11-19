@@ -25,10 +25,17 @@ class Turnstile extends Contract
         }
         $key = htmlspecialchars((string) ($this->options['sitekey'] ?? ''), ENT_QUOTES, 'UTF-8');
         $action = htmlspecialchars($this->action(), ENT_QUOTES, 'UTF-8');
-        return '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>'
+        $widget = '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>'
             . '<div class="cf-turnstile" data-sitekey="' . $key . '" data-action="' . $action
             . '" data-theme="auto" data-size="flexible" data-retry="auto" data-refresh-expired="auto"></div>'
             . '<noscript>Aktifkan JavaScript untuk menyelesaikan verifikasi keamanan.</noscript>';
+        if ($this->factory->getCaptchaSection() === 'memberarea') {
+            // Inherit the same theme width rules as the member password input.
+            // Remove input decoration so the flexible widget fills the wrapper exactly.
+            return '<div class="form-control slims-turnstile-member" style="height:auto;padding:0;border:0;background:transparent;box-shadow:none;">'
+                . $widget . '</div>';
+        }
+        return $widget;
     }
 
     public function validate()
