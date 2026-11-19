@@ -2,9 +2,7 @@
 
 Plugin Cloudflare Turnstile untuk membantu melindungi halaman login pustakawan/pengguna sistem, login anggota perpustakaan, dan lupa password pustakawan pada SLiMS Bulian.
 
-**Versi plugin: 1.0.8** · **Pengembang: Agung PW**
-
-[Unduh plugin 1.0.8](dist/cloudflare-turnstile-1.0.8.zip?raw=true)
+**Pengembang: Agung PW**
 
 ## Cara kerja
 
@@ -22,18 +20,17 @@ Integrasi menggunakan sistem plugin dan provider CAPTCHA SLiMS. Tidak perlu meng
 
 ## Cara pasang
 
-1. Unduh ZIP plugin pada tautan di atas, lalu ekstrak folder `cloudflare-turnstile` ke direktori `plugins/` SLiMS.
+1. Buka tautan [RELEASE](https://github.com/prazetyo/slims-cloudflare-turnstile/releases), download file ZIP lalu ekstrak folder `cloudflare-turnstile` ke direktori `plugins/` SLiMS.
 2. Aktifkan **Cloudflare Turnstile** melalui menu pengelola plugin SLiMS.
 3. Buat widget **Managed** di dashboard Cloudflare Turnstile dan daftarkan hostname situs.
-4. Buka **System → Cloudflare Turnstile**, lalu isi Site Key, Secret Key, dan hostname situs. Gunakan domain saja, misalnya `opac.domainanda.ac.id`, tanpa `https://`, port, atau path.
+4. Buka **System → Cloudflare Turnstile**, lalu isi Site Key, Secret Key, dan hostname situs. Gunakan domain saja, misalnya `digilib.domainanda.ac.id`, tanpa `https://`, port, atau path.
 5. Pilih halaman yang dilindungi, centang **Aktif**, lalu klik **Simpan Pengaturan**.
 6. Uji login pustakawan dan anggota melalui browser privat sambil mempertahankan sesi admin yang masih aktif.
 
-Jika mengunduh seluruh repository melalui **Code → Download ZIP**, gunakan subfolder `cloudflare-turnstile` sebagai folder plugin; jangan menyalin seluruh folder repository ke `plugins/`.
 
 ## Catatan
 
-- Setiap instalasi memakai kunci Cloudflare dan hostname miliknya sendiri. Paket distribusi tidak menyertakan kredensial atau file kunci enkripsi instalasi.
+- Setiap instalasi memakai kunci Cloudflare dan hostname miliknya sendiri.
 - Kolom Secret Key sengaja ditampilkan kosong. Saat menyimpan, biarkan kosong untuk mempertahankan nilai sebelumnya.
 - Untuk pembaruan, timpa file plugin tanpa menghapus folder `private`. Setelah memperbarui versi lama, simpan pengaturan sekali untuk mengenkripsi Secret Key yang sebelumnya tersimpan biasa.
 - Kunci enkripsi dibuat otomatis. Jangan membagikan `private/encryption-key.php` dari situs aktif atau menyertakannya dalam paket komunitas.
@@ -43,12 +40,12 @@ Jika mengunduh seluruh repository melalui **Code → Download ZIP**, gunakan sub
 
 ## Struktur repository
 
-- `cloudflare-turnstile/`: source plugin siap dipasang, tanpa file `.md`.
+- `cloudflare-turnstile/`: source plugin siap dipasang.
 - `cloudflare-turnstile/INSTALL.txt`: petunjuk pemasangan singkat.
 - `dist/`: ZIP distribusi komunitas.
 - `LICENSE`: teks lisensi GNU GPL v3.
 
-## Kontak dan laporan masalah
+## Kontak
 
 - Website: https://agungprasetyo.net/
 - GitHub: https://github.com/prazetyo
