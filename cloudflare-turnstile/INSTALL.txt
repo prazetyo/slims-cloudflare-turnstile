@@ -1,0 +1,16 @@
+Cloudflare Turnstile untuk SLiMS Bulian — 1.0.8
+Pengembang: Agung PW — https://agungprasetyo.net/
+
+PEMASANGAN
+1. Ekstrak folder cloudflare-turnstile ke direktori plugins/ SLiMS.
+2. Aktifkan melalui pengelola plugin SLiMS.
+3. Buat widget Managed di dashboard Cloudflare Turnstile.
+4. Buka System > Cloudflare Turnstile. Isi Site Key, Secret Key, dan hostname situs tanpa https:// atau path.
+5. Pilih halaman yang dilindungi, centang Aktif, lalu simpan.
+6. Uji login pustakawan dan anggota melalui browser privat.
+
+PERSYARATAN
+SLiMS 9.7.2 atau 9.8.0, ekstensi PHP cURL dan OpenSSL, serta akses internet ke Cloudflare. Folder private plugin harus dapat ditulis oleh user PHP.
+
+PEMBARUAN
+Timpa file plugin tanpa menghapus folder private. Buka pengaturan lalu simpan kembali. Kosongkan Secret Key untuk mempertahankan nilai sebelumnya.
