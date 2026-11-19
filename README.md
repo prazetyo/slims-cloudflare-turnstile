@@ -4,6 +4,16 @@ Plugin Cloudflare Turnstile untuk membantu melindungi halaman login pustakawan/p
 
 **Pengembang: Agung PW**
 
+## Screenshot
+
+### Login pustakawan
+
+![Cloudflare Turnstile pada login pustakawan](docs/images/login-pustakawan.png)
+
+### Login anggota
+
+![Cloudflare Turnstile pada login anggota](docs/images/login-member.png)
+
 ## Cara kerja
 
 Plugin menampilkan widget Turnstile pada form yang dipilih. Saat form dikirim, server memvalidasi token melalui Cloudflare Siteverify dan memeriksa hostname serta tujuan verifikasinya sebelum SLiMS melanjutkan proses login.
