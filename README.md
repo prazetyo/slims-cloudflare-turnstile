@@ -16,11 +16,11 @@ Plugin Cloudflare Turnstile untuk membantu melindungi halaman login pustakawan/p
 
 ### Lupa password pustakawan
 
-![Cloudflare Turnstile pada halaman lupa password](docs/images/lupa-password.png)
+![Cloudflare Turnstile pada halaman lupa password](docs/images/lupa-password.png?v=7e19993a1d2e17efec6fccb6cbbb264ee0e7305d)
 
 ### Pengaturan plugin
 
-![Pengaturan plugin Cloudflare Turnstile](docs/images/pengaturan-plugin.png)
+![Pengaturan plugin Cloudflare Turnstile](docs/images/pengaturan-plugin.png?v=b55aed97a935ed06cdd6c101ef8e021391d9554e)
 
 ## Cara kerja
 
