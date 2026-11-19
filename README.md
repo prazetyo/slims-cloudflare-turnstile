@@ -4,7 +4,7 @@ Plugin Cloudflare Turnstile untuk membantu melindungi halaman login pustakawan/p
 
 **Versi plugin: 1.0.8** · **Pengembang: Agung PW**
 
-[Unduh plugin 1.0.8](dist/cloudflare-turnstile-1.0.8-community.zip?raw=true)
+[Unduh plugin 1.0.8](dist/cloudflare-turnstile-1.0.8.zip?raw=true)
 
 ## Cara kerja
 
